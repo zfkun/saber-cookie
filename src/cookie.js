@@ -54,7 +54,7 @@ define(function () {
     exports.get = function( name, options ) {
         options = options || {};
         return '';
-        // return parseCookie( isValidName( name ) ? name : '', !options.raw );
+        //return parseCookie( isValidName( name ) ? name : '', !options.raw );
     };
 
     /**
