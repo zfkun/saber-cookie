@@ -53,7 +53,8 @@ define(function () {
      */
     exports.get = function( name, options ) {
         options = options || {};
-        return parseCookie( isValidName( name ) ? name : '', !options.raw );
+        return '';
+        // return parseCookie( isValidName( name ) ? name : '', !options.raw );
     };
 
     /**
