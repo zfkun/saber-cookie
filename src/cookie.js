@@ -35,8 +35,7 @@ define(function () {
             date.setTime( date.getTime() + options.expires );
         }
 
-        document.cookie =
-            name + '=' + ( options.raw ? value : encodeURIComponent( value ) )
+        document.cookie = name + '=' + ( options.raw ? value : encodeURIComponent( value ) )
             + ( date instanceof Date ? '; expires=' + date.toUTCString() : '' )
             + ( options.domain ? '; domain=' + options.domain : '' )
             + ( options.path ? '; path=' + options.path : '' )
@@ -54,8 +53,7 @@ define(function () {
      */
     exports.get = function( name, options ) {
         options = options || {};
-        return '';
-        //return parseCookie( isValidName( name ) ? name : '', !options.raw );
+        return parseCookie( isValidName( name ) ? name : '', !options.raw );
     };
 
     /**
